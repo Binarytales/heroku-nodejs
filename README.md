@@ -33,7 +33,7 @@ This hasn't happened yet and so I'm not totally sure exactly which builds get re
 The Dockerfile in your project should look something like this for basic usage
 
 ```
-FROM FROM binarytales/heroku-nodejs:5.6.0
+FROM binarytales/heroku-nodejs:5.6.0
 
 ADD package.json /app/user/
 RUN /app/heroku/node/bin/npm install
