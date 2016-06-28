@@ -2,9 +2,13 @@
 
 This image is for use with the [Heroku Docker CLI plugin](https://github.com/heroku/heroku-docker).
 
-Public auto builds for this variant can be found at https://hub.docker.com/r/binarytales/heroku-nodejs/
+Public auto builds for this variant can be found at https://hub.docker.com/r/ilivebox/heroku-nodejs/
 
-The repository for this variant can found at https://github.com/Binarytales/heroku-nodejs
+The repository for this variant can found at https://github.com/ilivebox/heroku-nodejs
+
+## Fork from Binarytales/heroku-nodejs
+
+`heroku/docker-nodejs` no longer maintenance, and @Binarytalse is on vacation, so let me do that for you. 
 
 ## Changes from heroku/docker-nodejs
 
@@ -33,7 +37,7 @@ This hasn't happened yet and so I'm not totally sure exactly which builds get re
 The Dockerfile in your project should look something like this for basic usage
 
 ```
-FROM FROM binarytales/heroku-nodejs:5.6.0
+FROM ilivebox/heroku-nodejs:latest
 
 ADD package.json /app/user/
 RUN /app/heroku/node/bin/npm install
